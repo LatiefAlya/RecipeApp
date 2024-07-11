@@ -1,0 +1,162 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        Recipe
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content>
+  <ion-card>
+    <img src="assets/img/rendang2.jpg" alt="Rendang" />
+    <ion-card-header>
+      <ion-card-title>Rendang</ion-card-title>
+    </ion-card-header>
+    <ion-card-content> Rava upma with red chilies and lemon </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item-divider>
+      <ion-label>Popular</ion-label>
+      <ion-button fill="clear" slot="end">More &gt;&gt;</ion-button>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/images/popular-dish.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Paneer Butter Masala</h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/images/popular-dish2.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Fresh Vegetable Salad</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-divider>
+      <ion-label>Snacks</ion-label>
+      <ion-button fill="clear" slot="end">More &gt;&gt;</ion-button>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/images/snack-dish.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Bread Sticks with Vegetables</h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/images/snack-dish2.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Chocolate Chip Cookies</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-divider>
+      <ion-label>Lunch</ion-label>
+      <ion-button fill="clear" slot="end">More &gt;&gt;</ion-button>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/images/lunch-dish.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Mixed Vegetable Curry</h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/images/lunch-dish2.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Stuffed Paratha</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content> -->
+
+<!-- <ion-content>
+  <ion-searchbar placeholder="Search recipes"></ion-searchbar>
+
+  <div class="recipe-list">
+    <div class="recipe">
+      <div class="recipe-image">
+        <img src="https://picsum.photos/200" alt="Recipe image" />
+      </div>
+      <div class="recipe-info">
+        <h2>Oat & Coconut Pancakes</h2>
+        <p>A healthy and delicious breakfast option.</p>
+      </div>
+    </div>
+
+    <div class="recipe">
+      <div class="recipe-image">
+        <img src="https://picsum.photos/200" alt="Recipe image" />
+      </div>
+      <div class="recipe-info">
+        <h2>Orange & Honey Chicken</h2>
+        <p>A simple and flavorful chicken dish.</p>
+      </div>
+    </div>
+
+    <div class="recipe">
+      <div class="recipe-image">
+        <img src="https://picsum.photos/200" alt="Recipe image" />
+      </div>
+      <div class="recipe-info">
+        <h2>Creamy Tomato Soup</h2>
+        <p>A comforting and satisfying soup.</p>
+      </div>
+    </div>
+
+    <div class="recipe">
+      <div class="recipe-image">
+        <img src="https://picsum.photos/200" alt="Recipe image" />
+      </div>
+      <div class="recipe-info">
+        <h2>Fruit Salad with Yogurt Dressing</h2>
+        <p>A refreshing and healthy dessert.</p>
+      </div>
+    </div>
+  </div>
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Popular Searches </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="Search by recipe or ingredients"></ion-searchbar>
+
+  <div class="popular-searches">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" *ngFor="let item of popularSearches">
+          <div class="search-item">
+            <img
+              [src]="item.image"
+              alt="{{item.title}}"
+            /></div></ion-col></ion-row
+    ></ion-grid></div
+></ion-content>

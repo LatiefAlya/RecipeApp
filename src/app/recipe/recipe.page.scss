@@ -1,0 +1,64 @@
+// ion-card img {
+//     width: 100%;
+//     height: auto;
+//   }
+  
+//   ion-card-header {
+//     text-align: center;
+//   }
+  
+//   ion-card-title {
+//     font-size: 1.2em;
+//     font-weight: bold;
+//   }
+  
+//   ion-card-content {
+//     text-align: center;
+//     color: #666;
+//   }
+  
+//   ion-item-divider {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+  
+//   ion-thumbnail img {
+//     width: 80px;
+//     height: 80px;
+//     object-fit: cover;
+//   }
+  
+//   ion-label h2 {
+//     font-size: 1em;
+//     margin: 0;
+//   }
+//   .recipe-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center; /* Or space-around for even spacing */
+// }
+
+ion-searchbar {
+  margin: 16px;
+}
+
+.popular-searches {
+  padding: 16px;
+}
+
+.search-item {
+  text-align: center;
+  margin-bottom: 16px;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  h3 {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        Profile
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons>
+      <ion-button>
+        <ion-icon></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-content>
+    <div class="profile-header">
+      <img
+        src="assets/img/burger.jpeg"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+      <h2>Foodies</h2>
+      <p>Food innovator</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <h3>353</h3>
+        <p>Recipes</p>
+      </div>
+      <div class="stat">
+        <h3>12K</h3>
+        <p>Views</p>
+      </div>
+      <div class="stat">
+        <h3>1.4K</h3>
+        <p>Followers</p>
+      </div>
+    </div>
+
+    <ion-segment>
+      <ion-segment-button value="cookbooks"> Cook Books </ion-segment-button>
+      <ion-segment-button value="collection"> Collection </ion-segment-button>
+    </ion-segment>
+
+    <div class="recipe-list">
+      <div class="recipe-item">
+        <img src="assets/img/bar.jpg" alt="Fruity Breakfast" />
+        <h4>Yogurt Bar</h4>
+        <p>8 recipes</p>
+      </div>
+      <div class="recipe-item">
+        <img src="assets/img/oatmeal.jpg" alt="Tasty Low-cal" />
+        <h4>oatmeal</h4>
+        <p>25 recipes</p>
+      </div>
+      <div class="recipe-item">
+        <img src="assets/img/smoothie.jpg" alt="Healthy Desserts" />
+        <h4>Smoothie</h4>
+        <p>3 recipes</p>
+      </div>
+      <div class="add-recipe-item">
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <p>Add your food group</p>
+      </div>
+    </div>
+
+    <ion-button expand="full" color="danger"> Create a recipe </ion-button>
+  </ion-content>
+</ion-content>

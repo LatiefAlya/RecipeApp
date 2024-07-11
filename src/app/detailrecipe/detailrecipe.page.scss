@@ -1,0 +1,21 @@
+ion-card {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    ion-card-header {
+      text-align: center;
+    }
+  
+    ion-row {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+  }
+  
+  ion-list-header {
+    margin-top: 20px;
+  }
+  
